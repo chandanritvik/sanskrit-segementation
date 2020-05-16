@@ -1,5 +1,5 @@
-a=open('LMI_w1000_p1000_s200','r')
-b=open('LMI_w1000_p1000_s200_clean','w')
+a=open('words','r')
+b=open('words_clean','w')
 d={}
 ind=1
 for line in a:
@@ -15,3 +15,4 @@ for line in a:
   b.write(s)
 a.close()
 b.close()
+print('Total number of words:',ind-1)
