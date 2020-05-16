@@ -4,6 +4,9 @@ d={}
 ind=1
 for line in a:
   k=line.split()
+  if len(k)<2:
+    print('extra:',line)
+    continue
   x,y=k[0],k[1]
   if x not in d:
     d[x]=ind
